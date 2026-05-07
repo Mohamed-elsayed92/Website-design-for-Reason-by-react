@@ -1,0 +1,76 @@
+.about-item {
+    background-color: #d1d1d1;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.about-item.mg {
+    margin: 0 5%;
+}
+
+.about-item .icon {
+    color: #6195ff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-item-tital {
+    text-transform: capitalize;
+    font-size: 1.5vw;
+    /* سيصغر الخط كلما صغرت الشاشة */
+    color: #000000;
+    transition: color 0.5s;
+}
+
+.about-item-dec {
+    font-size: 0.9vw;
+    /* سيصغر الخط كلما صغرت الشاشة */
+    color: #000000;
+    text-transform: capitalize;
+    transition: color .5s;
+}
+
+
+/* هذا الكلاس يضمن بقاء الـ div مربعًا دائمًا بغض النظر عن محتواه */
+
+.about-item-square {
+    /* هذه الخاصية هي ما تجعل العنصر مربعاً (نسبة 1 إلى 1) */
+    aspect-ratio: 1 / 1;
+    display: flex;
+    /* لترتيب المحتوى داخله */
+    flex-direction: column;
+    justify-content: center;
+    /* لتوسيط المحتوى عمودياً */
+}
+
+.about-item-link {
+    color: #6195ff;
+    font-size: 16px;
+}
+
+.about-item:hover .about-item-dec {
+    color: #6195ff;
+    ;
+}
+
+.about-item:hover .about-item-tital {
+    color: #6195ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d6efd;
+}

@@ -1,0 +1,81 @@
+/* 3.6 team section */
+
+.team-content-item {
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+.team-content-item .team-img {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 311px;
+}
+
+.team-content-item .team-img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 1%, 15%, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.team-overlay a {
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+    color: white;
+    display: block;
+    margin-left: auto;
+}
+
+.team-overlay a i {
+    line-height: 40px;
+}
+
+.team-info .team-info-title {
+    text-transform: capitalize;
+    color: #222;
+    margin: 10px auto;
+    transition: color 0.5s, opacity 0.5s, visibility 0.5s;
+}
+
+.team-info .team-info-text {
+    color: #999;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: color 0.5s, opacity 0.5s, visibility 0.5s;
+}
+
+.team-content-item:hover .team-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team-content-item:hover .team-info-text {
+    color: #6195ff;
+}
+
+.team-content-item:hover .team-info-title {
+    color: #6195ff;
+}
+
+
+/* perant (2) */
+
+.team-content-item.mg {
+    margin: 0 4%;
+}

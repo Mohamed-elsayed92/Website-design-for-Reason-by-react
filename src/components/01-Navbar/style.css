@@ -1,0 +1,48 @@
+/* 3.0 header */
+
+#mohamed.collapse .nav-item {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nav-item .header-address {
+    color: #2500cc !important;
+    /* اللون  الداكن */
+    display: inline-block;
+}
+
+.nav-item .header-address::after {
+    content: "";
+    width: 100%;
+    /* اجعل العرض 100% دائمًا */
+    height: 3px;
+    /* اجعل الارتفاع 3px دائمًا */
+    background-color: #6195ff;
+    display: block;
+    margin-top: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    /* ابدأ التشغيل من اليسار */
+    transition: transform 0.5s ease;
+}
+
+.nav-item .header-address:hover::after {
+    transform: scaleX(1);
+}
+
+#mohamed.collapse.show,
+#mohamed.collapsing {
+    position: absolute;
+    top: 100%;
+    /* تبدأ مباشرة بعد الهيدر */
+    right: 0;
+    z-index: 1050;
+    /* للتأكد من ظهورها فوق أي عنصر آخر */
+    background-color: #fff;
+    /* أضف لون خلفية لكي لا تظهر شفافة فوق الكلام */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* اختياري: لمسة جمالية */
+}
+
+.navbar {
+    position: relative;
+}

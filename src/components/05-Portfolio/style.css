@@ -1,0 +1,50 @@
+    /* 3.4 Portfolio section */
+    
+    .Portfolio-content .Portfolio-section {
+        border: 1px solid #e8e8e8;
+        margin-bottom: 36px;
+        padding: 20px 15px 30px 70px;
+        /* background-color: black; */
+    }
+    
+    .Portfolio-section.mg {
+        margin: 0 3%;
+    }
+    
+    .icon-wrapper {
+        background-color: #f8f9fa;
+        /* وضع خلفية خفيفة خلف الأيقونة */
+        border-radius: 50%;
+        padding: 6px;
+        /* مسافة داخلية حول الأيقونة */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .p {
+        padding: 2px;
+    }
+    
+    .h-250 {
+        height: 250px;
+    }
+    
+    .Portfolio-title {
+        text-transform: lowercase;
+        transition: color 0.5s;
+    }
+    
+    .Portfolio-desc {
+        color: #999999;
+        line-height: 1.09;
+        transition: color 0.5s;
+    }
+    
+    .card:hover .Portfolio-title {
+        color: white;
+    }
+    
+    .card:hover .Portfolio-desc {
+        color: #e9d207;
+    }
