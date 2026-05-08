@@ -10,7 +10,7 @@ const iconMap = {
 const PhotoLibrary = () => {
 const [photo, setPhoto] = useState([]);
 useEffect(()=>{
-    axios.get("/js/Data.json").then(res=>{setPhoto(res.data["Photo-Library"]);})
+    axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setPhoto(res.data["Photo-Library"]);})
 },[]);
 return (
 <div className="Photo-Library "id="3">
@@ -22,7 +22,7 @@ return (
     <div className=" row ">
     { photo.map((item)=>(
         <div className="col-lg-4 col-md-6 col-10 mx-auto "key={item.id}>
-    <div className="mb-3 Photo-item"> <img src={item.image}alt={item.id} className=" img-fluid rounded-start gallory-img "/>
+    <div className="mb-3 Photo-item"> <img src={`${process.env.PUBLIC_URL}${item.image}`}alt={item.id} className=" img-fluid rounded-start gallory-img "/>
         <div className="layer-photo ">
         <div className="layer-info">
         <span className="category">category</span>

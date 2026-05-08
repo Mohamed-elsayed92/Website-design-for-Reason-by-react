@@ -5,14 +5,14 @@ import './style.css'
 const Navbar = () => {
 const [navbar,setNavbar] = useState([]);
 useEffect(()=>{
-  axios.get('/js/Data.json').then(res=>{setNavbar(res.data.navbar);})},[]);
+  axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setNavbar(res.data.navbar);})},[]);
     return ( 
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light ">
   <div className="container-fluid flex-column  ">
           <div className=" collapse navbar-collapse flex-grow-1 w-100 "id="navbarDesktop">
     <Link className="navbar-brand" to="/">
-      <img src="images/ChatGPT Image Aug 11, 2025, 06_04_45 AM.png" style={{width: "4rem"}} alt="Logo"/>
+      <img src={`${process.env.PUBLIC_URL}/images/logo.png`} style={{width: "4rem"}} alt="Logo"/>
     </Link>
          <ul className="navbar-nav mt-1 me-auto ">
     {navbar.map((item)=>
@@ -26,7 +26,7 @@ useEffect(()=>{
         </div>
 <div className="d-flex align-items-center w-100 d-lg-none  "> 
     <Link className="navbar-brand " to="/">
-      <img src="images/ChatGPT Image Aug 11, 2025, 06_04_45 AM.png" style={{width: "4rem"}}/>
+      <img src={`${process.env.PUBLIC_URL}/images/logo.png`}style={{width: "4rem"}}/>
     </Link>
     <form className="d-flex  flex-grow-1 " role="search">
               <input className="form-control me-2 " type="search" placeholder="Search"aria-label="Search"/>

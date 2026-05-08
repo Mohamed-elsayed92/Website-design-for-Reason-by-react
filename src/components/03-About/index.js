@@ -12,7 +12,7 @@ const iconMap = {
 const About = () => {
 const [about , setAbout] =useState([]);
 useEffect(()=>{
-  axios.get('/js/Data.json').then(res=>{setAbout(res.data.webSite);})
+  axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setAbout(res.data.webSite);})
 },[]);
   return (
  <div className="about  "id="2">

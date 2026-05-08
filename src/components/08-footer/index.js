@@ -15,7 +15,7 @@ const socialLinks = [
 const Footer= () => {
     const [footer, setFooter] =useState([]);
     useEffect(()=>{
-        axios.get('/js/Data.json').then(res=>{setFooter(res.data["team-section"]);})
+        axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setFooter(res.data["team-section"]);})
     },[])   
   return (
     <footer className="footer">

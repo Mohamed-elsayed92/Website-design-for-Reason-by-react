@@ -10,7 +10,7 @@ const iconMap = {
 const Portfolio = () => { 
     const [Price,setPrice] = useState([]);
 useEffect(()=>{
-    axios.get('/js/Data.json').then(res=>{setPrice(res.data.offer);})
+    axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setPrice(res.data.offer);})
 },[]);
 
 return (

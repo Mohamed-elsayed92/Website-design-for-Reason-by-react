@@ -12,7 +12,7 @@ const iconMap = {
 const Contact = () => {
     const [team,setTeam] =useState([]);
     useEffect(()=>{
-axios.get('/js/Data.json').then(res=>{setTeam(res.data["team-section"]);})
+axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setTeam(res.data["team-section"]);})
     },[])
 return(
     <div className="team "id="4">
@@ -28,7 +28,7 @@ return(
     <div className="col-lg-4 col-md-6 col-12 mb-4 order-md-1 " key={item.id}>
         <div className="team-content-item  ">
           <div className="team-img ">
-            <img src={item.image}  className="img-fluid ttb-effect " alt={item.name}/>
+            <img src={`${process.env.PUBLIC_URL}${item.image}`} className="img-fluid ttb-effect " alt={item.name}/>
             <div className="team-overlay ">
                 {item.icons.map((iconName, index) => (
               <a key={index} href="https://www.facebook.com/mido.elsayed.56"><FontAwesomeIcon icon={iconMap[iconName.trim()]}/></a>
