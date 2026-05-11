@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Website-design-for-Reason-by-react/static/css/main.840dc5b6.css",
-    "main.js": "/Website-design-for-Reason-by-react/static/js/main.2b19e252.js",
+    "main.js": "/Website-design-for-Reason-by-react/static/js/main.b2dfb460.js",
     "static/js/453.208b4b5c.chunk.js": "/Website-design-for-Reason-by-react/static/js/453.208b4b5c.chunk.js",
     "index.html": "/Website-design-for-Reason-by-react/index.html",
     "main.840dc5b6.css.map": "/Website-design-for-Reason-by-react/static/css/main.840dc5b6.css.map",
-    "main.2b19e252.js.map": "/Website-design-for-Reason-by-react/static/js/main.2b19e252.js.map",
+    "main.b2dfb460.js.map": "/Website-design-for-Reason-by-react/static/js/main.b2dfb460.js.map",
     "453.208b4b5c.chunk.js.map": "/Website-design-for-Reason-by-react/static/js/453.208b4b5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.840dc5b6.css",
-    "static/js/main.2b19e252.js"
+    "static/js/main.b2dfb460.js"
   ]
 }
