@@ -5,14 +5,14 @@ import './style.css'
 const Navbar = () => {
 const [navbar,setNavbar] = useState([]);
 useEffect(()=>{
-  axios.get(`${process.env.PUBLIC_URL}/js/Data.json`).then(res=>{setNavbar(res.data.navbar);})},[]);
+  axios.get('js/Data.json').then(res=>{setNavbar(res.data.navbar);})},[]);
     return ( 
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light ">
   <div className="container-fluid flex-column  ">
           <div className=" collapse navbar-collapse flex-grow-1 w-100 "id="navbarDesktop">
     <Link className="navbar-brand" to="/">
-      <img src={`${process.env.PUBLIC_URL}/images/logo.png`} style={{width: "4rem"}} alt="Logo"/>
+      <img src={'images/logo.png'} style={{width: "4rem"}} alt="Logo"/>
     </Link>
          <ul className="navbar-nav mt-1 me-auto ">
     {navbar.map((item)=>
