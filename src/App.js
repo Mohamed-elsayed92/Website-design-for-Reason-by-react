@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -13,7 +13,7 @@ import Contact from './components/07-team-section';
 import Footer from './components/08-footer';
 function App() {
     return (
-    <Router basename="/Website-design-for-Reason-by-react">
+ <HashRouter>
      <Navbar/>
     <Routes>
     <Route path="/" element={<Home/>}/>
@@ -25,7 +25,7 @@ function App() {
     <Route path="*" element={<Home />} />
     </Routes>
      <Footer/>
-    </Router>
+       </HashRouter>
     );
     }
     export default App;
