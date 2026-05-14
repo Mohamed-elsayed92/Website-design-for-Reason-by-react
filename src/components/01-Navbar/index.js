@@ -5,7 +5,7 @@ import './style.css'
 const Navbar = () => {
 const [navbar,setNavbar] = useState([]);
 useEffect(()=>{
-  axios.get('public/js/Data.json').then(res=>{setNavbar(res.data.navbar);})},[]);
+  axios.get('js/Data.json').then(res=>{setNavbar(res.data.navbar);})},[]);
     return ( 
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-light ">
