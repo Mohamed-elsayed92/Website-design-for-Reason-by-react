@@ -12,7 +12,7 @@ useEffect(()=>{
   <div className="container-fluid flex-column  ">
           <div className=" collapse navbar-collapse flex-grow-1 w-100 "id="navbarDesktop">
     <Link className="navbar-brand" to="/">
-      <img src={'public/images/logo.png'} style={{width: "4rem"}} alt="Logo"/>
+      <img src={'images/logo.png'} style={{width: "4rem"}} alt="Logo"/>
     </Link>
          <ul className="navbar-nav mt-1 me-auto ">
     {navbar.map((item)=>
