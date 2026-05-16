@@ -28,11 +28,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          # حل المشكلة الثانية: رفعنا الإصدار إلى 20 ليتوافق مع React Router 7
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        # حل المشكلة الأولى: استبدلنا npm ci بأمر install العادي لحل مشكلة التضارب
+        run: npm install
 
       - name: Build Project
         run: npm run build
